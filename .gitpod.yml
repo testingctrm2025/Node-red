@@ -2,9 +2,9 @@ image: node:18
 
 tasks:
   - init: |
-      npm install node-red
+ 
     command: |
-      npx node-red -u /workspace/.node-red -p 1880
+     
 
 ports:
   - port: 1880

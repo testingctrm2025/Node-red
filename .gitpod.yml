@@ -2,9 +2,10 @@ image: node:18
 
 tasks:
   - init: |
- 
+      npm install -g --unsafe-perm node-red
     command: |
-     
+      # run Node-RED and save flows into the workspace so you can commit them
+      node-red -u /workspace/.node-red -p 1880
 
 ports:
   - port: 1880
